@@ -2,10 +2,11 @@ public class Test {
     public static void main(String[] args)  {
 
         Adder adder = new Adder();
+        adder.dividNumber(4,4);
 
-        double result = 0;
+
         try {
-            result = adder.addNumbers(4,8);
+            double result = adder.addNumbers(4,-4);
             System.out.println("Result is " + result);
         } catch (UnableToAddException e) {
             System.out.println("This does not work because "+ e.getMessage());
